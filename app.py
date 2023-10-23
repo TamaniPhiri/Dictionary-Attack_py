@@ -14,4 +14,9 @@ for word in p_file:
     
     
     if digest==i_hash:
-        print("")
+        print("Password is :" ,word)
+        pass_found=1
+        break
+
+if not pass_found:
+    print("Password not found")
